@@ -1,0 +1,38 @@
+
+
+h2 + p{
+    font-style: italic;
+    font-weight: bold;
+    text-indent: 30px;
+}
+
+#consejo{
+    background-color: #CBCA85;
+    color: #9784A6;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#textolinea{
+    background-color: #F8DDC2;
+    color: #9784A6;
+    text-transform: uppercase;
+    text-transform: capitalize;
+}
+
+h3{
+    background-color: #AA815A;
+    color: #F7F7C2;
+}
+
+.clase{    /*Falta diferenciar entre el h4 y el p normal*/
+    color: #9784A6;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#idparaestilo{
+    background-color: #9784A6;
+    color: white;
+    font-family: monospace;
+    letter-spacing: 3px;
+}
