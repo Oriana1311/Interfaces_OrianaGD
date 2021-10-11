@@ -1,0 +1,39 @@
+body{
+    background-color: lightblue;
+}
+
+div{
+    height: 500px;
+    margin: 5%;
+    border: 1px solid black;
+}
+
+#a{
+    background-image: url(madrid.jpg);
+}
+
+.scroll{
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+}
+
+#b{
+    background-color: white;
+    background-image: url(madrid.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#c{
+    background-color: white;
+    background-image: url(madrid.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+#c img{
+    width: 200px;
+    box-shadow: 5px 5px 10px black;
+}
+
