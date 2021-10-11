@@ -1,0 +1,42 @@
+* { /* Todos los elementos de la página tienen borde */
+    border: thin solid #442A5D;
+}
+/*Hay que crear clases por cada párrafo, en función de la propiedad display */
+
+#negrita{
+    display: block;
+}
+
+.enLinea{
+    display: inline;
+}
+
+.lista{
+    display: list-item;
+    list-style-position: outside;
+    list-style-type:square;
+    margin-left: 5%;
+}
+
+.none{
+    display: none;
+}
+
+.bloqueenlinea{
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+}
+
+.table-cell{
+    display: table-cell;
+}
+
+.desplazado{
+    position: relative;
+    top: 20px; right: 20px;
+}
+
+.static{
+    position: static;
+}
