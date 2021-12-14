@@ -1,0 +1,15 @@
+#wrap{
+    display: grid;
+    background-color: lightblue;
+    width: 80%;
+    grid-template-columns: repeat(6, 2.5rem) repeat(2, 6rem);
+    grid-template-rows: repeat(2, 9rem);
+  
+    gap: 0.5em;
+    margin: 0 auto;
+}
+
+.caja{
+    background-color: darkblue;
+    color: white;
+}
