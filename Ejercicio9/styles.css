@@ -1,0 +1,46 @@
+*{
+    margin: 0.5em;
+    font-family: monospace;
+}
+
+p{
+    font-size: 18px;
+}
+
+.container{
+    display: flex;
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: lightpink;
+    margin-top: 2em;
+    /*ANIMACION*/
+    animation-name: desplazar;
+    animation-duration: 4s;
+    transition: all 300ms;
+    animation-iteration-count: initial;			
+}
+
+.container h1{
+    color: white;
+    animation: rotar 2s;
+    transition: all 300ms;
+    animation-iteration-count: 1;
+    animation-delay: 2s;			
+
+}
+
+@keyframes desplazar{
+    0% {transform: translateX(0px) ;}	
+    50% {transform: translateX(400%);}
+    100% {transform: translateX(0px) ;}
+}
+
+@keyframes rotar{
+    0% {transform: rotate(0deg);}	
+    25% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    75% {transform: rotate(270deg);}
+    100% {transform: rotate(360deg);}
+}

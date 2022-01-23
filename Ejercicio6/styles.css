@@ -1,0 +1,38 @@
+*{
+    margin: 1em;
+    padding: 0;
+    text-align:justify;
+    font-family: monospace;
+}
+
+p{
+    font-size: 18px;
+}
+
+#animacion{
+    width: 500px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-image: url(imagenes/pixel1.gif);
+    margin: 0 auto;
+    box-shadow: 8px 8px 5px #ccc;
+    /*Propiedades de animación*/
+    animation-duration: 8s;
+    animation-iteration-count: infinite;	
+    transition: all 300ms;
+    animation-name: gifs;
+}
+
+@keyframes gifs {
+	from {background-image: url(imagenes/pixel1.gif)}
+
+	25% {background-image: url(imagenes/pixel2.gif)}
+	
+	50% {background-image: url(imagenes/pixel3.gif)}
+	
+	75% {background-image: url(imagenes/pixel4.gif)}
+	
+	to {background-image: url(imagenes/pixel1.gif);}
+}
+
