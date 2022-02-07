@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Práctica 5</title>
+    <link rel="icon" type="favicon/x-icon" href="#" />
     <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -13,29 +14,33 @@
 <body>
 
     <header>
-        <div class="logo"></div>
+        <div id="logo">
+            <picture>
+                <source media="(min-width: 1200px)" sizes="(min-width: 1600px)70vw,1200px"
+                    srcset="multimedia\logo\circle300px.png 1200w" type="image/png" />
+                <source media="(min-width: 1200px)" sizes="(min-width: 1600px)70vw,1200px" 
+                    srcset="multimedia\logo\circle300px.png  1600w,
+                    multimedia\logo\circle100px.png 1200w" type="image/png" />
+                <source media="(min-width: 800px)" srcset="multimedia\logo\circle80px.png " type="image/png" />
+
+                <img src="multimedia/logo/circle50px.png" alt="circulo de colores"> <!--F30: Fallo de los Criterios de Conformidad 1.1.1 y 1.2.1 (alt="logo")-->
+            </picture>
+        </div>
 
         <!--NAV Bootstrap-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand px-5" href="#">LogoWEB</a>
-            <picture>
-                <source media="(min-width: 650px)" srcset="multimedia/imagenes/cat.htm">
-                <source media="(min-width: 465px)" srcset="multimedia/imagenes/cat.htm">
-                <img src="multimedia/imagenes/cat.htm" alt="a cute kitten">
-            </picture>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- <a class="navbar-brand px-5" href="#">LogoWEB</a> -->
+
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-5">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Artículos</a>
+                        <a class="nav-link" href="#">Pomodoro timer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -43,14 +48,71 @@
         <!--FIN NAV-->
     </header>
 
+    <audio loop autoplay>
+        <source src="multimedia/audio/Monsters Inc Lofi OGG.ogg" type="audio/ogg" />
+        <source src="multimedia/audio/Monsters Inc (LoFi Remix).mp3" type="audio/mp3" />
+    </audio>
+
     <div class="container">
-        <h1>Hello world :)</h1>
-        <p>El objetivo de la práctica es crear la “página de inicio” de una empresa. Es decir, la
-            clásica página de inicio con imágenes, sonido, vídeo y animaciones. </p>
+        <div id="banner">
+            <h1>Lofi study with me WEB</h1>
+        </div>
+
+        <div id="cards">
+
+            <div class="card">
+                <img src="https://via.placeholder.com/100x100/FFFFFF/86ADDF?Text=HolaMundo
+                C/O https://placeholder.com/" alt="imagen">
+                <h2 class="category">Técnicas de estudio</h2>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, laborum!
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/100x100/FFFFFF/86ADDF?Text=HolaMundo
+                C/O https://placeholder.com/" alt="imagen">
+                <h2 class="category">Pomodoro timer</h2>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere autem aliquam a delectus possimus
+                    magni.
+                </p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/100x100/FFFFFF/86ADDF?Text=HolaMundo
+                C/O https://placeholder.com/" alt="imagen">
+                <h2 class="category">Productividad</h2>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nobis!
+                </p>
+            </div>
+
+        </div>
+
+        <div id="videos">
+
+            <div id="youtube">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/bz5q5gl2uZA?autoplay=1&mute=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+
+            </div>
+
+            <div id="descarga">
+                <video loop controls width="560" height="315">
+                    <source src="multimedia/videos/cuaderno.mp4" type="video/mp4" />
+                    <source src="multimedia/videos/cuaderno.ogv" type="video/ogv" />
+                    Tu navegador no soporta HTML5 Video :(
+                </video>
+            </div>
+
+
+        </div>
     </div>
 
-    <footer>
-        <p>Práctica 5 &copy; Oriana Gil</p>
+    <footer id="footer">
+        <p>Práctica unidad 5 &copy; Oriana Gil</p>
     </footer>
 
     <script type="text/javascript" src="jQuery/jquery-3.6.0.min.js"></script>
