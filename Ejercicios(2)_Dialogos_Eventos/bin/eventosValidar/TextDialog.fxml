@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eventosValidar.TextDialogController">
+   <children>
+      <TextField fx:id="field" layoutX="76.0" layoutY="100.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <Button fx:id="botonMostrar" layoutX="99.0" layoutY="145.0" mnemonicParsing="false" text="Mostrar dialogo" />
+      <Text fill="#818181" layoutX="70.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ejercicio TextDialog">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
